@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Kaya Leo",
+    "slug": "kaya-leo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A2A5E"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.kayaleo.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Tunatumia mahali ulipo ili kukupata nyumba karibu nawe.",
+        "NSPhotoLibraryUsageDescription": "Kupakia picha za nyumba au wasifu wako.",
+        "NSCameraUsageDescription": "Kupiga picha za nyumba yako."
+      }
+    },
+    "android": {
+      "package": "app.kayaleo.mobile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0A2A5E"
+      },
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"],
+      "config": {
+        "googleMaps": {
+          "apiKey": "REPLACE_WITH_ANDROID_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Tunatumia mahali ulipo ili kukupata nyumba karibu nawe."
+        }
+      ]
+    ]
+  }
+}
